@@ -7,7 +7,7 @@ echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | sud
 
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 
-sudo apt-get update 
+sudo apt-get update<br> 
 sudo apt-get install libedgetpu1-std <br>
 sudo apt-get install libedgetpu1-max<br>
 
@@ -25,9 +25,9 @@ cd tflite/python/examples/classification
 
 bash install_requirements.sh
 
-python3 classify_image.py \<br>
---model models/mobilenet_v2_1.0_224_inat_bird_quant_edgetpu.tflite \<br>
---labels models/inat_bird_labels.txt \<br>
+python3 classify_image.py \ <br>
+--model models/mobilenet_v2_1.0_224_inat_bird_quant_edgetpu.tflite \ <br>
+--labels models/inat_bird_labels.txt \ <br>
 --input images/parrot.jpg
 
 # congrulation, you can see the output
